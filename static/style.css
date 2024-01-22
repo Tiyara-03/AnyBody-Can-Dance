@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+#navbar{
+    background-color: rgb(187, 183, 114);
+    
+    /* margin: 23px; */
+    padding: 11px 4px;
+    font-family: 'Open Sans', sans-serif;
+}
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#navbar li{
+    list-style: none;
+}
+
+#navbar li a{
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    /* align-items: center; */
+    padding: 13px 24px;
+    
+}
+#navbar li a:hover{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    /* align-items: center; */
+    padding: 13px 24px;
+}
+
+#introSection {
+    padding-bottom: 40px;
+    height: 300px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 35px;
+    background: center center / cover no-repeat url("/static/dance.jpg");
+    background-color: rgb(185, 255, 127);
+}
+
+#introSection div.small{
+    font-size: 27px;
+    padding: 5px;
+
+
+}
+
+#sponsorsSection {
+      height:  300px;
+      background-color: rgb(251, 214, 219);
+}
+
+#sponsorsSection h2{
+    font-family: sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    /* margin-top: 10px; */
+    padding-top: 23px;
+
+}
+
+#footer {
+    background-color: beige;
+    height: 100px;
+}
