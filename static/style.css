@@ -51,15 +51,40 @@
     align-items: center;
     font-family: 'Open Sans', sans-serif;
     font-size: 35px;
-    background: center center / cover no-repeat url("/static/dance.jpg");
+    background: center center /cover no-repeat url("/static/dance.jpg");
     background-color: rgb(185, 255, 127);
 }
 
 #introSection div.small{
-    font-size: 27px;
+    font-size: 27px; 
     padding: 5px;
 
 
+}
+
+#Missionsection{
+    height: 300px;
+}
+
+#Missionsection h2{
+    font-family: sans-serif;
+    text-align: center;
+    padding-top: 12px ;
+}
+
+.card{
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 30%;
+    margin: 23px 21px;
+    height: 209px;
+    display: inline-block;
+}
+
+.card h3{
+    text-align: center;
+    margin: 12px;
+    
 }
 
 #sponsorsSection {
