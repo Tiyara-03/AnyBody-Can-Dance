@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
+/* @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+
 *{
     margin: 0px;
     padding: 0px;
@@ -7,89 +11,148 @@
 
 }
 
+#logo{
+    display: flex;
+    color: white;
+    align-items: center;
+    margin: 0px 14px;
+    margin-right: 40px;
+}
+
+#logo img {
+    max-height: 65px;
+
+}
+
 #navbar{
-    background-color: rgb(187, 183, 114);
+    background-color: rgb(228 226 221);
     
     /* margin: 23px; */
-    padding: 11px 4px;
+    /* padding: 25px 4px; */
+    padding: 10px;
     font-family: 'Open Sans', sans-serif;
 }
 #navbar ul{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
 }
 
 #navbar li{
     list-style: none;
+    margin-right: 15px;
+    /* padding: 12px 5px; */
 }
 
 #navbar li a{
     font-weight: bold;
     text-decoration: none;
-    color: white;
-    font-size: 1.2rem;
+    color: #323232;
+    font-size: 1.6rem;
     /* align-items: center; */
     padding: 13px 24px;
     
 }
 #navbar li a:hover{
     text-decoration: none;
-    color: black;
-    font-size: 1.2rem;
+    color: rgb(250, 250, 250);
+    font-size: 1.6rem;
     /* align-items: center; */
     padding: 13px 24px;
 }
 
 #introSection {
     padding-bottom: 40px;
-    height: 300px;
-    color: white;
+    height: 500px;
+    color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 35px;
-    background: center center /cover no-repeat url("/static/dance.jpg");
+    /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-family: 'DM Serif Display', serif;
+    font-size: 40px;
+    opacity: 0.8;
+    background: center center /cover no-repeat url("/static/bg2.jpg");
     background-color: rgb(185, 255, 127);
 }
 
 #introSection div.small{
-    font-size: 27px; 
+    margin: 16px;
+    font-size: 33px; 
+    font-weight: bold;
     padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
 
 
 }
 
 #Missionsection{
-    height: 300px;
+    height: 332px;
+    margin: auto;
+    width: 85%;
+
 }
 
 #Missionsection h2{
     font-family: sans-serif;
     text-align: center;
     padding-top: 12px ;
+    font-size: 36px;
 }
 
 .card{
     border: 2px solid black;
+    background-color: antiquewhite;
     border-radius: 10px;
     width: 30%;
-    margin: 23px 21px;
+    margin: 23px 17px;
     height: 209px;
     display: inline-block;
 }
 
 .card h3{
     text-align: center;
+    font-size: 25px;
     margin: 12px;
+    color: #3f3f3f;
+    font-family:Arial, Helvetica, sans-serif;
     
+}
+
+.card-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.card-img{
+    height: 144px;
+    padding: 0 14px;
+}
+
+.card-img img{
+    height: inherit;
+    border-radius: 15px;
+
+}
+
+.card-content{
+    padding: 0 10px;
+}
+
+.card-content p{
+    font-size: 19px;
 }
 
 #sponsorsSection {
       height:  300px;
       background-color: rgb(251, 214, 219);
+      position: relative;
 }
 
 #sponsorsSection h2{
@@ -99,6 +162,22 @@
     /* margin-top: 10px; */
     padding-top: 23px;
 
+}
+
+#sponsors{
+    height: 125px;
+    max-width: 100px;
+    margin: 36px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.spimage{
+   margin: 20px; 
+   height: 80%;
+   width: 100%;
 }
 
 #footer {
