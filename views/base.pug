@@ -1,0 +1,28 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title new project   
+        block scripts 
+        block style 
+    body
+        nav#navbar 
+            ul
+                div#logo
+                    img(src = "/static/AbCDlogo.png")
+                    |HDA
+                li #[a(href="/")  Home]
+                li #[a(href="/") About]
+                li #[a(href="/") Services]
+                li #[a(href="/") Class info]
+                li #[a(href="/") Contact Us ]
+
+        block content 
+        footer#footer 
+            | Copyright © 2024 AnyBodyCanDAnce.com | All rights reserved
+ 
+
+
+
+        

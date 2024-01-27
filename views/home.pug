@@ -1,28 +1,18 @@
-doctype html
-html(lang="en")
-    head
-        meta(charset="UTF-8")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title new project   
-        style   
+extends base.pug
+
+block scripts
+  script(src='/static/index.js')
+
+block style 
+    style   
             include ../static/style.css
-    body 
-        nav#navbar 
-            ul
-                div#logo
-                    img(src = "/static/AbCDlogo.png")
-                    |HDA
-                li #[a(href="/")  Home]
-                li #[a(href="/") About]
-                li #[a(href="/") Services]
-                li #[a(href="/") Class info]
-                li #[a(href="/") Contact Us ]
 
-        section#introSection 
-            div Welcome to The amazing Dance Academy
-            div.small Eat Sleep Dance Repeat
+block content  
+    section#introSection 
+              div Welcome to The amazing Dance Academy
+              div.small Eat Sleep Dance Repeat
 
-        section#Missionsection
+    section#Missionsection
             h2 Our Mission
             
             div.card
@@ -50,15 +40,10 @@ html(lang="en")
                     div.card-content
                         p  Free Style And Contemprory
 
-        section#sponsorsSection 
+    section#sponsorsSection 
             h2 Our sponsors
             div#sponsors
                 img(src="/static/logo1.png", alt="Sponsors image", class="spimage")
                 img(src="/static/logo2.png", alt="Sponsors image", class="spimage")
                 img(src="/static/logo3.png", alt="Sponsors image", class="spimage")
                 img(src="/static/logo4.png", alt="Sponsors image", class="spimage")
-
-        footer#footer 
-            | our footer here
-        script 
-            include ../static/index.js
